@@ -27,7 +27,7 @@ public class MyResource
 		JdbcConnection jd=new JdbcConnection();
 		return jd.getbook(uid, bid, btitle, bdur);
 	}
-	@GETs
+	@GET
 	@Path("return")
 	@Produces(MediaType.TEXT_PLAIN)
 	public String bookReturn(@QueryParam("uid")int uid,@QueryParam("bid")int bid) {
